@@ -581,6 +581,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 100px;
   list-style-type: none;
+  justify-content: center;
 }
 
 .restaurant-item {
@@ -708,6 +709,7 @@ body {
   border-radius: 50%;
   border: 1px solid #000000;
   animation: eye 4s infinite;
+  -webkit-animation: eye 4s infinite;
   animation-timing-function: cubic-bezier(1, 0.2, 0.82, 0.075); 
   -webkit-animation-timing-function: cubic-bezier(1, 0.2, 0.82, 0.075); 
 }
