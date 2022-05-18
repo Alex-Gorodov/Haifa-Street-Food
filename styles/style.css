@@ -3,14 +3,14 @@
   --main-font: "Epilogue", sans-serif;
 }
 @font-face {
-  font-family: "Epilogue", sans-serif;
+  font-family: "Epilogue";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/Epilogue-Regular.ttf") format("ttf");
   font-display: swap;
 }
 @font-face {
-  font-family: "Epilogue", sans-serif;
+  font-family: "Epilogue";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Epilogue-Bold.ttf") format("ttf");
@@ -710,8 +710,6 @@ body {
   border: 1px solid #000000;
   animation: eye 4s infinite;
   -webkit-animation: eye 4s infinite;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(1, 0.2, 0.82, 0.075); 
   -webkit-animation-timing-function: cubic-bezier(1, 0.2, 0.82, 0.075); 
 }
