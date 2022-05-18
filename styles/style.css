@@ -710,8 +710,8 @@ body {
   border: 1px solid #000000;
   animation: eye 4s infinite;
   -webkit-animation: eye 4s infinite;
-  animation-fill-mode: backwards;
-  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(1, 0.2, 0.82, 0.075); 
   -webkit-animation-timing-function: cubic-bezier(1, 0.2, 0.82, 0.075); 
 }
