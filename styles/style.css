@@ -670,10 +670,7 @@ body {
   display: block;
   width: 100px;
   height: 146px;
-  background-image: url('../images/logo-star.svg');
-  background-size: 100px 146px;
-  background-position: center;
-  background-repeat: no-repeat;
+  transform: scale(1.5) translateY(30px);
 }
 
 /* mouth */
