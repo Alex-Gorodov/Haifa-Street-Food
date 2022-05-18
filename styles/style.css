@@ -673,23 +673,8 @@ body {
   transform: scale(1.5) translateY(30px);
 }
 
-/* mouth */
-.logo-item:nth-of-type(2) {
-  position: absolute;
-  bottom: 46px;
-  left: 36px;
-  display: block;
-  width: 22px;
-  height: 26px;
-
-  /* background-image: url('../images/logo-mouth.svg'); */
-  background-size: 22px 26px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 /* eye */
-.logo-item:nth-of-type(3) {
+.logo-item:nth-of-type(2) {
   position: absolute;
   top: 38px;
   left: 37px;
@@ -701,7 +686,7 @@ body {
 }
 
 /* pupil */
-.logo-item:nth-of-type(4) {
+.logo-item:nth-of-type(3) {
   position: absolute;
   top: 48px;
   left: 45px;
@@ -713,7 +698,7 @@ body {
 }
 
 /* eyepil */
-.logo-item:nth-of-type(5) {
+.logo-item:nth-of-type(4) {
   position: absolute;
   top: 38px;
   left: 37px;
