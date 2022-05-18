@@ -980,6 +980,7 @@ body {
 
   .page-footer .container {
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   .food-title {
