@@ -654,20 +654,6 @@ body {
   margin-bottom: 20px;
 }
 
-
-/* @keyframes eye {
-  from {background: linear-gradient(to bottom, #6860cd 40%, #000000 44%, transparent 42%); background-position: 0 0}
-  5% {background: linear-gradient(#6860cd 100%, transparent 100%); background-position: 0 100%}
-  10% {background: linear-gradient(to bottom, #6860cd 40%, #000000 44%, transparent 42%); background-position: 0 0}
-  16% {background: linear-gradient(#6860cd 100%, transparent 100%); background-position: 0 100%}
-  20% {background: linear-gradient(to bottom, #6860cd 40%, #000000 44%, transparent 42%); background-position: 0 0}
-  35% {background: linear-gradient(#6860cd 100%, transparent 100%); transition-delay: .5s; background-position: 0 100%}
-  40% {background: linear-gradient(to bottom, #6860cd 40%, #000000 44%, transparent 42%); background-position: 0 0}
-  60% {background: linear-gradient(#6860cd 100%, transparent 100%); transition-delay: .5s; background-position: 0 100%}
-  90% {background: linear-gradient(to bottom, #6860cd 40%, #000000 44%, transparent 42%); background-position: 0 0}
-  to {background: linear-gradient(#6860cd 100%, transparent 100%); background-position: 0 100%}
-} */
-
 @keyframes eye {
   from {background: linear-gradient(to bottom, #6860cd 40%, #000000 44%, transparent 42%); background-position: 0 0;}
   5% {background: linear-gradient(#6860cd 100%, transparent 100%); background-position: 0 100%;}
@@ -676,7 +662,7 @@ body {
   20% {background: linear-gradient(to bottom, #6860cd 60%, #000000 64%, transparent 62%); background-position: 0 0;}
   35% {background: linear-gradient(#6860cd 100%, transparent 100%); transition-delay: .5s; background-position: 0 100%;}
   40% {background: linear-gradient(to bottom, #6860cd 50%, #000000 54%, transparent 52%); background-position: 0 0;}
-  60% {background: linear-gradient(#6860cd 100%, transparent 100%); transition-delay: .5s; background-position: 0 100%;}
+  80% {background: linear-gradient(#6860cd 100%, transparent 100%); transition-delay: .5s; background-position: 0 100%;}
   90% {background: linear-gradient(to bottom, #6860cd 10%, #000000 14%, transparent 12%); background-position: 0 0;}
   to {background: linear-gradient(#6860cd 100%, transparent 100%); background-position: 0 100%;}
 }
