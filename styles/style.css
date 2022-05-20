@@ -597,13 +597,16 @@ body {
   display: block;
 }
 
+.restaurant-btn .restaurant-image {
+  transition: .4s;
+}
+
 .restaurant-btn:hover .food-image-description {
   color: #e6a1c2;
 }
 
 .restaurant-btn:hover .restaurant-image {
   transform: scale(1.2);
-  transition: .3s ease;
 }
 
 .food-image-description {
