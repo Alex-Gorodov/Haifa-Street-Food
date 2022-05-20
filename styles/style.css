@@ -734,7 +734,6 @@ body {
   position: absolute;
   display: inline-block;
   left: 50%;
-  bottom: 0;
   font-weight: 700;
   transform: translateX(-50%);
   white-space: nowrap;
