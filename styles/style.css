@@ -653,23 +653,20 @@ body {
   margin-bottom: 20px;
 }
 
-@keyframes eye {
-  from {background: linear-gradient(to bottom, #6860cd 40%, #000000 44%, transparent 42%); background-position: 0 0;}
-  5% {background: linear-gradient(#6860cd 100%, transparent 100%); background-position: 0 100%;}
-  10% {background: linear-gradient(to bottom, #6860cd 30%, #000000 34%, transparent 32%); background-position: 0 0;}
-  16% {background: linear-gradient(#6860cd 100%, transparent 100%); background-position: 0 100%;}
-  20% {background: linear-gradient(to bottom, #6860cd 60%, #000000 64%, transparent 62%); background-position: 0 0;}
-  35% {background: linear-gradient(#6860cd 100%, transparent 100%); transition-delay: .5s; background-position: 0 100%;}
-  40% {background: linear-gradient(to bottom, #6860cd 50%, #000000 54%, transparent 52%); background-position: 0 0;}
-  80% {background: linear-gradient(#6860cd 100%, transparent 100%); transition-delay: .5s; background-position: 0 100%;}
-  90% {background: linear-gradient(to bottom, #6860cd 10%, #000000 14%, transparent 12%); background-position: 0 0;}
-  to {background: linear-gradient(#6860cd 100%, transparent 100%); background-position: 0 100%;}
+@keyframes eyepil {
+  from {transform: translateY(-85%);}
+  60% {transform: translateY(-50%);}
+  80% {transform: translateY(-10%);}
+  95% {transform: translateY(0%);}
+  to {transform: translateY(0%);}
 }
-
 
 .logo {
   display: block;
   position: relative;
+  margin-top: 0;
+  margin-left: auto;
+  transform: scale(.6);
 }
 
 .logo-item svg {
@@ -682,8 +679,23 @@ body {
 .logo-item:nth-of-type(1) {
   display: block;
   width: 100px;
-  height: 146px;
-  transform: scale(1.5) translateY(30px);
+  height: 170px;
+  transform: scale(1.4) translateY(30px);
+}
+
+/* pupil */
+.logo-item:nth-of-type(2)::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #2be98d;
+  z-index: 1;
 }
 
 /* eye */
@@ -694,50 +706,73 @@ body {
   display: block;
   width: 33px;
   height: 33px;
+  border: 1px solid #000000;
   border-radius: 50%;
   background-color: #f0eab7;
-}
-
-/* pupil */
-.logo-item:nth-of-type(3) {
-  position: absolute;
-  top: 48px;
-  left: 46px;
-  display: block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #2be98d;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 /* eyepil */
-.logo-item:nth-of-type(4) {
+.logo-item:nth-of-type(2)::after {
+  content: '';
   position: absolute;
-  top: 38px;
-  left: 37px;
+  top: -1px;
+  left: -1px;
   display: block;
   width: 33px;
   height: 33px;
-  border-radius: 50%;
-  border: 1px solid #000000;
+  border-bottom: 1px solid #000;
   background-color: #6860CD;
-  animation: eye 2.5s infinite linear;
+  animation: eyepil 7.5s infinite linear;
   animation-fill-mode:forwards;
-  animation-direction: alternate-reverse;
-  -webkit-animation: eye 2.5s infinite linear;
+  animation-direction: alternate;
+  -webkit-animation: eyepil 7.5s infinite linear;
   transition: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-animation-fill-mode:forwards;
-  -webkit-animation-direction: alternate-reverse;
+  -webkit-animation-direction: alternate;
+  z-index: 2;
+}
+
+/* eyebrow */ 
+.logo-item:nth-of-type(3) {
+  position: absolute;
+  top: 32px;
+  left: 46px;
+  display: block;
+  width: 30px;
+  height: 1.5px;
+  transform: rotate(14deg);
+  background-color: black;
+}
+
+.logo:hover .logo-item:nth-of-type(2)::before {
+  transform: scale(1.7) translate(-30%, -30%);
+}
+
+.logo:hover .logo-item:nth-of-type(2)::after {
+  animation-play-state: paused;
+  border: none;
+  background-color: #6860CD;
+  height: 14px;
+  border-bottom: 1px solid #000; 
+  transform: rotate(20deg)
+}
+
+.logo:hover .logo-item:nth-of-type(3) {
+  transform:skew(3deg);
 }
 
 .developer-name {
   position: absolute;
   display: inline-block;
+  margin-top: -20px;
   left: 50%;
   font-weight: 700;
   transform: translateX(-50%);
   white-space: nowrap;
-  color: #ffffff;
+  color: #000000;
 }
 
 .footer-title {
