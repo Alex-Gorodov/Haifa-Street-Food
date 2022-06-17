@@ -559,6 +559,7 @@ body {
 }
 
 .restaurants-section {
+  display: block;
   background-color: #c5789d;
 }
 
@@ -576,7 +577,7 @@ body {
   padding: 0;
   margin: 0 auto;
   margin-bottom: 60px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, 300px);
   gap: 40px;
   list-style-type: none;
   justify-content: center;
