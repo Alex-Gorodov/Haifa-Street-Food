@@ -85,7 +85,7 @@
     transform: translateY(20px);
   }
 
-  .restaurant-item.element-show {
+  .element-show {
     opacity: 1;
     transition: all 1s;
     transform: translateY(0);
@@ -191,7 +191,7 @@
     transform: translateY(20px);
   }
 
-  .main-body .section.element-show {
+  .main-body .element-show {
     opacity: 1;
     transition: all 1s;
     transform: translateY(0%);
